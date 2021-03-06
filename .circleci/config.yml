@@ -26,9 +26,9 @@ jobs:
           paths:
             - node_modules
 
-      - run:
-          name: Run eslint
-          command: yarn lint
+#      - run:
+#          name: Run eslint
+#          command: yarn lint
 
       - run:
           name: JUnit
@@ -46,10 +46,10 @@ jobs:
           name: Run build
           command: yarn build
 
-      - slack/status:
-          fail_only: true
-          # mentions: "here"
-          # only_for_branches: 'master'
+#      - slack/status:
+#          fail_only: true
+#          # mentions: "here"
+#          # only_for_branches: 'master'
 
 # workflows:
 #   build:
