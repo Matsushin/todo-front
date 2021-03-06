@@ -30,17 +30,17 @@ jobs:
 #          name: Run eslint
 #          command: yarn lint
 
-      - run:
-          name: JUnit
-          command: yarn jest --ci --runInBand --reporters=default --reporters=jest-junit
-          environment:
-              JEST_JUNIT_OUTPUT_DIR: "reports/junit/js-test-results.xml"
+#      - run:
+#          name: JUnit
+#          command: yarn jest --ci --runInBand --reporters=default --reporters=jest-junit
+#          environment:
+#              JEST_JUNIT_OUTPUT_DIR: "reports/junit/js-test-results.xml"
 
-      - store_artifacts:
-          path: coverage
-
-      - store_test_results:
-          path: reports
+#      - store_artifacts:
+#          path: coverage
+#
+#      - store_test_results:
+#          path: reports
 
       - run:
           name: Run build
